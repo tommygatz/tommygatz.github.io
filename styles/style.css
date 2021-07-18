@@ -1,0 +1,25 @@
+body{
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 20px;
+}
+
+#heading {
+  text-align: center;
+  font-size: 30px;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-shadow: 0 2px 5px gray;
+}
