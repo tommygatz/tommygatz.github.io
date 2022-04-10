@@ -1,69 +1,60 @@
 body{
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  z-index: 0;
   font-family: 'Barlow', sans-serif;
   margin: 0;
 }
 
 .menubtn {
-  position: fixed;
+  position: absolute;
   opacity: 0;
-  width: 40px;
-  height: 40px;
-  top: 0;
-  left: 0;
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  margin-left: 5px;
   z-index: 100;
 }
 
-.custombtn {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  z-index: 80;
-  opacity: .75;
-}
-
 .line {
-  display: block;
   position: absolute;
   background-color: black;
   width: 30px;
   height: 5px;
-  margin-left: 6px;
+  margin-left: 7.5px;
   z-index: 90;
-  border-radius: 10px;
+  border-radius: 5px;
   align-items: center;
-  transition: all 0.5s linear;
-}
-
-.menubtn:checked ~ .line {
-  margin-left: 10px;
+  transition: all 0.5s ;
 }
 
 #line-1 {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .menubtn:checked ~ #line-1 {
-  transform-origin: top left;
-  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  transform: translateY(12px) rotate(45deg) scaleX(125%);
 }
 
 #line-2 {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .menubtn:checked ~ #line-2 {
+  transform-origin: center;
   transform: scale(0%);
 }
 
 #line-3 {
-  margin-top: 25px;
+  margin-top: 32px;
 }
 
 .menubtn:checked ~ #line-3 {
-  transform-origin: bottom left;
-  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  transform: translateY(-12px) rotate(-45deg) scaleX(125%);
 }
 
 .menupanel {
@@ -87,20 +78,27 @@ body{
   opacity: 1;
 }
 
-#heading, #message {
-  display: inline-block;
-  text-align: center;
+section {
+  display: flexbox;
+  position: absolute;
+  text-align: right;
   font-size: 40px;
   font-weight: bold;
   text-shadow: 5px 5px 12px black;
   height: 50px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 25px;
   color: black;
   z-index: 2;
 }
 
+#heading {
 
+}
+
+#message {
+  margin-top: 10px;
+}
 
 .links {
   display: block;
@@ -137,10 +135,3 @@ a:hover {
   box-shadow: 0px 0px 8px 1px;
 }
 
-section {
-  background-image: url('../assets/background.png');
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  z-index: 0;
-}
