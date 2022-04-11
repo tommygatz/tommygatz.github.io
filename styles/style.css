@@ -58,8 +58,8 @@ body{
 .menupanel {
   position: absolute;
   top: 0;
-  left: -30%;
-  width: 30%;
+  left: -40%;
+  width: 40%;
   height: 100vh;
   opacity: 0;
   z-index: 10;
@@ -135,6 +135,6 @@ a:hover {
 }
 
 .blur {
-  background: rgba(41, 41, 41, 0.5);
+  background: rgba(78, 78, 78, 0.5);
   backdrop-filter: blur(8px);
 }
