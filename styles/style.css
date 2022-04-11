@@ -58,9 +58,8 @@ body{
 .menupanel {
   position: absolute;
   top: 0;
-  left: -50%;
-  background-color: rgb(140, 186, 228);
-  width: fit-content;
+  left: -30%;
+  width: 30%;
   height: 100vh;
   opacity: 0;
   z-index: 10;
@@ -69,6 +68,7 @@ body{
   border-bottom-right-radius: 15px;
   border-width: 2px;
   box-shadow: black 1px 0px 10px;
+  /* background-color: rgb(140, 186, 228); */
 }
 
 .menubtn:checked ~ .menupanel {
@@ -109,6 +109,7 @@ section {
   margin-top: 50px;
   margin-left: 15px;
   margin-right: 30px;
+  color: white;
 }
 
 a {
@@ -130,6 +131,10 @@ a {
 a:hover {
   margin-left: 20px;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px;
+  /* box-shadow: rgb(190, 190, 190) 0px 0px 8px 1px; */
 }
 
+.blur {
+  background: rgba(41, 41, 41, 0.5);
+  backdrop-filter: blur(8px);
+}
